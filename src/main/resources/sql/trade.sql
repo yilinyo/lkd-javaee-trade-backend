@@ -74,7 +74,7 @@ CREATE TABLE `user`  (
   `phone` varchar(11) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '手机号',
   `userCredit` int(11) NULL DEFAULT 100 COMMENT '用户值',
   `userStatus` tinyint(4) UNSIGNED ZEROFILL NULL DEFAULT 0000 COMMENT '用户状态 0 正常 1 异常',
-  `userRole` tinyint(4) UNSIGNED NULL DEFAULT 0 COMMENT '用户角色 0 正常 1 管理员',
+  `userRole` tinyint(4) UNSIGNED NULL DEFAULT 0 COMMENT '用户角色 0 正常 1 vip 2 管理',
   `createTime` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '创建时间',
   `updateTime` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '更新时间',
   `isDeleted` tinyint(4) NULL DEFAULT 1 COMMENT '0 删除 ',
