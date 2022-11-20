@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yilin.trade.mapper.GoodsMapper">
+
+    <resultMap id="BaseResultMap" type="com.yilin.trade.model.domain.Goods">
+            <id property="gid" column="gid" jdbcType="BIGINT"/>
+            <result property="goodsName" column="goodsName" jdbcType="VARCHAR"/>
+            <result property="goodsPrice" column="goodsPrice" jdbcType="DECIMAL"/>
+            <result property="uid" column="uid" jdbcType="BIGINT"/>
+            <result property="goodsNum" column="goodsNum" jdbcType="BIGINT"/>
+            <result property="createTime" column="createTime" jdbcType="VARCHAR"/>
+            <result property="updateTime" column="updateTime" jdbcType="VARCHAR"/>
+            <result property="goodsImg" column="goodsImg" jdbcType="VARCHAR"/>
+            <result property="goodsInfo" column="goodsInfo" jdbcType="VARCHAR"/>
+            <result property="isDeleted" column="isDeleted" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        gid,goodsName,goodsPrice,
+        uid,goodsNum,createTime,
+        updateTime,goodsImg,goodsInfo,
+        isDeleted
+    </sql>
+
+</mapper>
