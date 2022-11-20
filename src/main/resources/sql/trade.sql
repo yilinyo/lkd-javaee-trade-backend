@@ -4,7 +4,6 @@
  Source Server         : javaee
  Source Server Type    : MySQL
  Source Server Version : 50650
- Source Host           : 1.12.218.126:3306
  Source Schema         : trade
 
  Target Server Type    : MySQL
